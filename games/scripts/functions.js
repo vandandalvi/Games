@@ -29,7 +29,7 @@ function autoplay() {
         intervalautoplay = setInterval(function () {
             computerMove();
             playGame(computer)
-        }, 0.1)
+        }, 1000)
     }
 }
 
