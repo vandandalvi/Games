@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles/functions.css">
+</head>
+
+<body>
+    <center>
+        <header>
+            <h1>ROCK PAPER SCISSOR GAME</h1>
+        </header>
+
+        <main>
+            <h5>Press 'A' for ROCK or 'B' for PAPER or 'C' for SCISSOR and 'R' for RESET</h5>
+            <div id="result">Choose an option to play!</div>
+            <br>
+            <a onclick="playGame('rock')">
+                <img src="rock.png" alt="Rock"
+                    height="100" width="100">
+            </a>
+            <a onclick="playGame('paper')">
+                <img src="paper.png" alt="Paper"
+                    height="100" width="100">
+            </a>
+            <a onclick="playGame('scissor')">
+                <img src="scissor.png" alt="Scissor"
+                    height="100" width="100">
+            </a>
+            <br><br>
+            <button class="resett">RESET</button>
+            <button onclick=" autoplay()">AUTO PLAY</button>
+            <button onclick=" stopautoplay()">STOP AUTO PLAY</button>
+            <br>
+            <h5>(Note : You can also play by simply clicking on image)</h5>
+        </main>
+
+        <footer>
+            <h2>THANK YOU FOR PLAYING</h2>
+        </footer>
+    </center>
+    <script src="scripts/functions.js"></script>
+
+</body>
+
+</html>
