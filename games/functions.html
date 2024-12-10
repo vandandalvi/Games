@@ -11,13 +11,16 @@
 <body>
     <center>
         <header>
+            <button class="dark"> Switch to Dark Mode</button>
             <h1>ROCK PAPER SCISSOR GAME</h1>
         </header>
+        
 
         <main>
             <h5>Press 'A' for ROCK or 'B' for PAPER or 'C' for SCISSOR and 'R' for RESET</h5>
             <div id="result">Choose an option to play!</div>
-            <br>
+            <br><h5>Press 'A' for ROCK or 'B' for PAPER or 'C' for SCISSOR and 'R' for RESET</h5>
+            <div id="result">Choose an option to play!</div>
             <a onclick="playGame('rock')">
                 <img src="rock.png" alt="Rock"
                     height="100" width="100">
@@ -32,7 +35,7 @@
             </a>
             <br><br>
             <button class="resett">RESET</button>
-            <button onclick=" autoplay()">AUTO PLAY</button>
+            <button onclick=" autoplay() "class="green">AUTO PLAY</button>
             <button onclick=" stopautoplay()">STOP AUTO PLAY</button>
             <br>
             <h5>(Note : You can also play by simply clicking on image)</h5>
