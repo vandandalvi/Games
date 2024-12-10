@@ -2,6 +2,19 @@ let sore = JSON.parse(localStorage.getItem('score'));
 let score = sore ? sore : { win: 0, loss: 0, tie: 0 };
 let computer = '';
 let intervalautoplay = ''
+let dark = document.querySelector('.dark')
+
+dark.addEventListener('click',function(){
+   
+    if(dark.textContent==='Switch to Dark Mode'){
+        dark.textContent='Switch to Light Mode'
+    }
+    else{dark.textContent='Switch to Dark Mode'}
+    if(document.body.style.backgroundColor==='white'){
+        document.body.style.backgroundColor='grey'
+    }
+    else{document.body.style.backgroundColor='white'}
+})
 
 document.body.addEventListener('keydown', (event) => {
     if (event.key === 'a') {
